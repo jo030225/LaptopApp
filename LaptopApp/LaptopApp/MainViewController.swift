@@ -8,11 +8,15 @@
 import UIKit
 
 class MainViewController: UIViewController {
+    
+    var count: Bool = false
 
+    @IBOutlet weak var applicationBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        applicationBtn.layer.cornerRadius = 10
     }
     
 
@@ -25,8 +29,19 @@ class MainViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    @IBAction func backBtn(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+    @IBAction func appClickBtn(_ sender: Any) {
+        
+        if (count) {
+            applicationBtn.setTitle("노트북 신청", for: .normal)
+            view.backgroundColor = .white
+        } else {
+            applicationBtn.setTitle("노트북 취소", for: .normal)
+            view.backgroundColor = .green
+        }
+        count = !count
+        
+        
+        
     }
     
 }
