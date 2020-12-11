@@ -76,7 +76,7 @@
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.56301294298041038" green="0.60713179601063261" blue="0.96851998567581177" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="VJf-h0-4fO" id="tod-FF-pSt"/>
@@ -149,7 +149,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CSg-KJ-hzT"/>
-                        <color key="backgroundColor" red="0.56301294298041038" green="0.60713179601063261" blue="0.96851998567581177" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" title="회원가입" id="BCI-Bv-bNk">
                         <barButtonItem key="rightBarButtonItem" title="Cancle" id="qqu-ab-2Ir">
@@ -160,6 +160,9 @@
                     </navigationItem>
                     <connections>
                         <outlet property="done" destination="i4H-kl-A0W" id="7K3-qo-6UX"/>
+                        <outlet property="id" destination="MZD-YQ-6E3" id="4Hu-gQ-j09"/>
+                        <outlet property="name" destination="m0a-Tt-pFJ" id="ABw-pB-urF"/>
+                        <outlet property="password" destination="udK-aA-Bhy" id="qxT-TA-qx5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nyN-jM-qry" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
